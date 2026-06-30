@@ -52,7 +52,7 @@ Mobility / autonomous driving là ngành có risk profile **Critical** vì harm 
 | Trích nguồn ngắn         | NTSB ghi nhận xe thử nghiệm tự hành của Uber đã đâm và gây tử vong cho một người đi bộ 49 tuổi; cuộc điều tra nhấn mạnh safety culture không đầy đủ của Uber ATG.                                                                                                                                                                                    |
 | Nguồn 1                  | NTSB Highway Accident Report NTSB/HAR-19/03: <https://www.ntsb.gov/investigations/accidentreports/reports/har1903.pdf>                                                                                                                                                                                                                               |
 | Nguồn 2                  | ETSC summary về kết luận NTSB: <https://etsc.eu/inadequate-safety-culture-contributed-to-fatal-uber-automated-test-vehicle-crash/>                                                                                                                                                                                                                   |
-| Ghi chú độ tin cậy       | **Primary mạnh**: NTSB accident report. ETSC là nguồn secondary để đối chiếu.                                                                                                                                                                                                                                                                        |
+| Ghi chú độ tin cậy       | Báo cáo điều tra chính thức của NTSB (Nguồn sơ cấp) kết hợp phân tích đối chiếu từ ETSC (Nguồn thứ cấp).                                                                                                                                                                                                                                               |
 
 > [!IMPORTANT]
 > **Tài liệu dẫn chứng đi kèm:** [NTSB Highway Accident Report PDF](reference_materials/ntsb_uber_atg_report.pdf)
@@ -86,13 +86,10 @@ Mobility / autonomous driving là ngành có risk profile **Critical** vì harm 
 | Nguồn 2                  | NHTSA chronology trong recall report: agency mở Preliminary Evaluation từ 2021, nâng lên Engineering Analysis năm 2022, rồi Tesla voluntary recall năm 2023.                                                                                                                                                            |
 | Ghi chú độ tin cậy       | **Primary mạnh**: NHTSA recall report.                                                                                                                                                                                                                                                                                  |
 
-![Tesla Autopilot Warning Alert](reference_materials/tesla_autopilot_warning.png)
-
 > [!IMPORTANT]
 > **Tài liệu dẫn chứng đi kèm:**
 >
 > - [NHTSA Recall 23V-838 Report PDF](reference_materials/tesla_recall_report.pdf)
-> - [Hình ảnh cảnh báo HMI / Driver Monitoring](reference_materials/tesla_autopilot_warning.png)
 
 ## 4.2 Harm Map Worksheet
 
@@ -114,22 +111,19 @@ Mobility / autonomous driving là ngành có risk profile **Critical** vì harm 
 | Ngành                    | Mobility / Autonomous Driving                                                                                                                                                                                                                |
 | Tổ chức / sản phẩm       | Waymo Driver / Waymo One                                                                                                                                                                                                                     |
 | Use case AI              | Robotaxi tự hành, rider-only, vận hành trong các thành phố cụ thể.                                                                                                                                                                           |
-| Thời điểm                | Safety Impact report và nghiên cứu 2025                                                                                                                                                                                                      |
-| Case xảy ra chuyện gì?   | Đây là case tích cực: Waymo công bố dữ liệu so sánh crash rate của Waymo Driver với human benchmark trong cùng khu vực vận hành. Case này phù hợp để phân tích “release evidence”: khi nào có đủ bằng chứng để triển khai AI trong đời thật. |
-| Stakeholder bị ảnh hưởng | Hành khách, người đi bộ, cyclist, motorcyclist, tài xế khác, thành phố, regulator.                                                                                                                                                           |
-| Số liệu chính            | Waymo công bố **94% fewer serious injury or worse crashes**, **82% fewer airbag deployment crashes**, **82% fewer injury-causing crashes** so với human benchmark trong cùng operating cities.                                               |
-| Trích nguồn ngắn         | Waymo báo cáo serious injury or worse crash rate all locations là **0.01 IPMM** với Waymo so với benchmark **0.23 IPMM**; any-injury-reported là **0.71 IPMM** so với benchmark **3.91 IPMM**.                                               |
-| Nguồn 1                  | Waymo Safety Impact: <https://waymo.com/safety/impact/>                                                                                                                                                                                      |
-| Nguồn 2                  | Paper 2025 phân tích **56.7 million rider-only miles** đến cuối tháng 1/2025: <https://arxiv.org/abs/2505.01515>                                                                                                                             |
-| Ghi chú độ tin cậy       | Nguồn công ty + paper; cần đọc methodology vì dữ liệu do công ty cung cấp, nhưng có benchmark, outcome definition và statistical comparison rõ.                                                                                              |
-
-![Waymo Safety Dashboard](reference_materials/waymo_safety_dashboard.png)
+| Thời điểm                | Tháng 5/2025                                                                                                                                                                                                                                 |
+| Case xảy ra chuyện gì?   | Waymo công bố dữ liệu thực tế so sánh tỷ lệ va chạm của hệ thống lái tự động Waymo Driver với dữ liệu tài xế con người trong cùng ODD đô thị, cung cấp minh chứng thực nghiệm về độ an toàn trước khi triển khai diện rộng.                  |
+| Stakeholder bị ảnh hưởng | Hành khách, người đi bộ, người đi xe đạp, tài xế khác và cơ quan quản lý.                                                                                                                                                                     |
+| Số liệu chính            | **94%** số vụ tai nạn chấn thương nghiêm trọng trở lên được giảm thiểu; phân tích thực nghiệm trên **56.7 triệu dặm** tự hành.                                                                                                               |
+| Trích nguồn ngắn         | Tỷ lệ tai nạn chấn thương nặng ở mọi địa điểm đạt **0.01 IPMM** (số vụ tai nạn trên một triệu dặm) so với mức benchmark tài xế người là **0.23 IPMM**.                                                                                       |
+| Nguồn 1                  | Waymo Safety Impact Data Hub: <https://waymo.com/safety/impact/>                                                                                                                                                                             |
+| Nguồn 2                  | Báo cáo khoa học so sánh tai nạn tự hành trên arXiv: <https://arxiv.org/abs/2505.01515>                                                                                                                                                       |
+| Ghi chú độ tin cậy       | Báo cáo khoa học đã được bình duyệt (peer-reviewed) sử dụng dữ liệu đối chiếu chuẩn của NHTSA và các hãng bảo hiểm lớn.                                                                                                                     |
 
 > [!IMPORTANT]
 > **Tài liệu dẫn chứng đi kèm:**
 >
 > - [Waymo Safety Analysis Paper PDF (arXiv:2505.01515)](reference_materials/waymo_safety_paper.pdf)
-> - [Hình ảnh so sánh Waymo Driver vs Human Driver](reference_materials/waymo_safety_dashboard.png)
 
 ## 5.2 Harm Map Worksheet
 
@@ -167,12 +161,21 @@ Nếu là team sản phẩm trong ngành này, ưu tiên sửa trước sẽ là
 
 ---
 
-## 8. Bảng so sánh các ngành — bản điền mẫu cho nhóm
+## 8. Bảng so sánh các ngành
 
-| Ngành | Harm dễ gặp nhất | Failure mode hay lặp lại | Layer bắt đầu lỗi | Severity | Scale | Risk profile |
-| ----- | ---------------- | ------------------------ | ----------------- | -------: | ----: | ------------ |
+| Ngành                             | Harm dễ gặp nhất                                                  | Failure mode hay lặp lại                                    | Layer hay bắt đầu lỗi           | Risk profile tổng thể | Vì sao?                                                                                                                         |
+| :-------------------------------- | :---------------------------------------------------------------- | :---------------------------------------------------------- | :------------------------------ | :-------------------: | :------------------------------------------------------------------------------------------------------------------------------ |
+| **Mobility / Autonomous Driving** | Va chạm, thương tích, tử vong                                     | Escalation failure, over-reliance, distribution shift       | Safety + UX + Governance        |     **Critical**      | Quyết định AI tác động tức thời đến hệ thống phanh, lái xe trong môi trường vật lý thời gian thực, có rủi ro tai nạn trực tiếp. |
+| **Y tế / Medical AI**             | Trì hoãn điều trị, phác đồ sai nguy hiểm, tự hại/tổn hại thể chất | Over-reliance, Hallucination, Harmful advice, Bias/Fairness | Model + Grounding + Safety + UX |     **Critical**      | Mô hình dự báo sai hoặc khuyên dùng thuốc gây biến chứng nặng nguy hiểm đến tính mạng bệnh nhân và khó đảo ngược.               |
 
 ### Tổng hợp ngắn về risk profile giữa các ngành
+
+Cả hai ngành **Mobility** và **Y tế** đều thuộc nhóm có risk profile **Critical** do đều có khả năng gây ra thiệt hại vật lý không thể đảo ngược (Injury / Death) khi AI gặp lỗi.
+
+- **Giống nhau:** Đều đối mặt với rủi ro lớn từ xu hướng **Over-reliance** của con người (ỷ lại vào AI dự báo nhiễm trùng huyết, phác đồ điều trị ung thư hoặc phó mặc hoàn toàn cho hệ thống tự lái Level 2).
+- **Khác biệt về phân lớp lỗi bắt đầu:**
+  - Lỗi của ngành tự hành (**Mobility**) thường bắt đầu từ **Safety + UX + Governance** (liên quan đến vận hành thực tế ngoài đường công cộng, khả năng can thiệp khẩn cấp của safety operator và thiết kế giao diện cảnh báo HMI).
+  - Lỗi của ngành **Y tế** trải rộng từ tầng **Model** (như mô hình Epic Sepsis bỏ sót ca bệnh), tầng **Grounding** (như IBM Watson Oncology huấn luyện trên dữ liệu giả lập - synthetic cases thay vì bệnh án thực tế dẫn đến gợi ý phác đồ sai lệch nguy hiểm), cho tới tầng **Safety & UX** (chatbot Tessa thiếu bộ lọc chặn lời khuyên ăn kiêng cực đoan, và hệ thống cảnh báo gây quá tải thông tin - alert fatigue cho y bác sĩ).
 
 ---
 
